@@ -15,7 +15,7 @@
   font-size: 2rem;
 }
 
-.header__subtitle, .section__title, h4 {
+.header__subtitle, .section__title, .project__title {
   letter-spacing: 0.3rem;
 }
 
@@ -23,6 +23,6 @@
   text-transform: uppercase;
 }
 
-h4 {
+.project__title {
   font-size: 1.5rem;
 }
