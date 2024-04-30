@@ -55,29 +55,41 @@
     />
     <title>Personal Portfolio | Helios Barrera Hernández</title>
   </head>
-  <body>
-    <header>
-      <img src="./assets/img/logos/large.png" alt="large logo" />
-      <h1>Helios Barrera Hernández</h1>
-      <hr />
-      <h2>Full-stack Web Developer</h2>
-      <video autoplay loop muted>
-        <source src="assets/video/hero.mp4" />
+  <body class="layout">
+    <header class="layout__header">
+      <img
+        class="header__logo"
+        src="./assets/img/logos/large.png"
+        alt="large logo"
+      />
+      <h1 class="header__title">Helios Barrera Hernández</h1>
+      <hr class="header__divider" />
+      <h2 class="header__subtitle">Full-stack Web Developer</h2>
+      <video class="header__video" autoplay loop muted>
+        <source class="video__src" src="assets/video/hero.mp4" />
       </video>
     </header>
-    <nav>
-      <ul>
-        <li><a href="#portfolio">Portfolio</a></li>
-        <li><a href="#skillset">Skillset</a></li>
-        <li><a href="#experience">Experience</a></li>
-        <li><a href="#contact">Contact</a></li>
+    <nav class="layout__nav">
+      <ul class="nav__list">
+        <li class="list__item">
+          <a class="item__link" href="#portfolio">Portfolio</a>
+        </li>
+        <li class="list__item">
+          <a class="item__link" href="#skillset">Skillset</a>
+        </li>
+        <li class="list__item">
+          <a class="item__link" href="#experience">Experience</a>
+        </li>
+        <li class="list__item">
+          <a class="item__link" href="#contact">Contact</a>
+        </li>
       </ul>
-      <button id="hamburger">☰</button>
+      <button class="nav__hamburger-btn">☰</button>
     </nav>
-    <main>
-      <section>
-        <h3 id="portfolio">Portfolio</h3>
-        <hr />
+    <main class="main">
+      <section class="main__section">
+        <h3 class="section__title" id="portfolio">Portfolio</h3>
+        <hr class="section__divider" />
         <div>
           <button>
             <img src="assets/img/portfolio/1.png" />
@@ -85,77 +97,77 @@
           </button>
         </div>
       </section>
-      <section id="skillset">
-        <h3>Skillset</h3>
-        <hr />
-        <div>
-          <div>
+      <section class="main__section" id="skillset">
+        <h3 class="section__title">Skillset</h3>
+        <hr class="section__divider" />
+        <div class="skills">
+          <div class="skills__skill">
             <img src="assets/img/skillset/html.svg" />
-            <span>HTML</span>
+            <span class="skill__tooltip">HTML</span>
           </div>
-          <div>
+          <div class="skills__skill">
             <img src="assets/img/skillset/css.svg" />
-            <span>CSS</span>
+            <span class="skill__tooltip">CSS</span>
           </div>
-          <div>
+          <div class="skills__skill">
             <img src="assets/img/skillset/js.svg" />
-            <span>Javascript</span>
+            <span class="skill__tooltip">Javascript</span>
           </div>
-          <div>
+          <div class="skills__skill">
             <img src="assets/img/skillset/git.svg" />
-            <span>GIT</span>
+            <span class="skill__tooltip">GIT</span>
           </div>
-          <div>
+          <div class="skills__skill">
             <img src="assets/img/skillset/npm.svg" />
-            <span>npm</span>
+            <span class="skill__tooltip">npm</span>
           </div>
-          <div>
+          <div class="skills__skill">
             <img src="assets/img/skillset/bash.svg" />
-            <span>bash</span>
+            <span class="skill__tooltip">bash</span>
           </div>
-          <div>
+          <div class="skills__skill">
             <img src="assets/img/skillset/node.svg" />
-            <span>Node.js</span>
+            <span class="skill__tooltip">Node.js</span>
           </div>
-          <div>
+          <div class="skills__skill">
             <img src="assets/img/skillset/react.svg" />
-            <span>React</span>
+            <span class="skill__tooltip">React</span>
           </div>
         </div>
       </section>
-      <section id="experience">
-        <h3>Experience</h3>
-        <hr />
-        <div>
-          <a>
-            <img src="assets/img/experience/1.svg" />
-            <h4>Trabajo 1</h4>
+      <section class="main__section" id="experience">
+        <h3 class="section__title">Experience</h3>
+        <hr class="section__divider" />
+        <div class="work-experience">
+          <a class="work-experience__project">
+            <img class="project__img" src="assets/img/experience/1.svg" />
+            <h4 class="project__title">Trabajo 1</h4>
           </a>
         </div>
       </section>
-      <section id="contact">
-        <h3>Contact</h3>
-        <hr />
+      <section class="main__section" id="contact">
+        <h3 class="section__title">Contact</h3>
+        <hr class="section__divider" />
         <!-- Utiliza Formspree -->
-        <form action="" method="POST">
-          <label>
+        <form class="contact" action="" method="POST">
+          <label class="contact__label label-email">
             Your email:
-            <input type="email" name="_replyto" />
+            <input class="contact__input" type="email" name="_replyto" />
           </label>
-          <label>
+          <label class="contact__label label-msg">
             Your message:
-            <textarea name="message"></textarea>
+            <textarea class="contact__txt-area" name="message"></textarea>
           </label>
-          <button type="submit">Send</button>
+          <button class="contact__submit" type="submit">Send</button>
         </form>
-        <nav>
-          <a href="https://www.linkedin.com/in/qlessenp/">
+        <nav class="contact__nav">
+          <a class="contact__link" href="https://www.linkedin.com/in/qlessenp/">
             <img src="assets/img/social/linkedin.png" />
           </a>
-          <a href="https://github.com/quserforgitp">
+          <a class="contact__link" href="https://github.com/quserforgitp">
             <img src="assets/img/social/github.png" />
           </a>
-          <a href="#">
+          <a class="contact__link" href="#">
             <img src="assets/img/social/youtube.png" />
           </a>
         </nav>
