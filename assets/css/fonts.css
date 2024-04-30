@@ -1,0 +1,28 @@
+.layout {
+  font-family: 'Montserrat', sans-serif;
+  color: var(--gray3);
+  text-align: center;
+  font-size: 14px;
+}
+
+.layout__header,
+.layout__footer,
+.main__section:nth-child(even) {
+  color: var(--white);
+}
+
+.section__title {
+  font-size: 2rem;
+}
+
+.header__subtitle, .section__title, h4 {
+  letter-spacing: 0.3rem;
+}
+
+.header__title, .section__title {
+  text-transform: uppercase;
+}
+
+h4 {
+  font-size: 1.5rem;
+}
