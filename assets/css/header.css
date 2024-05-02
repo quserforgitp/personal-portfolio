@@ -16,3 +16,14 @@
   min-height: 100%;
   opacity: 0.2;
 }
+.header__divider {
+  height: 0.1rem;
+  max-width: 100%;
+  border: 0;
+  background-image: linear-gradient(
+    to right,
+    rgba(0, 0, 0, 0),
+    var(--primary),
+    rgba(0, 0, 0, 0)
+  );
+}
