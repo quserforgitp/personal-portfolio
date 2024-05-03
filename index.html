@@ -67,7 +67,7 @@
     <title>Personal Portfolio | Helios Barrera Hernández</title>
   </head>
   <body class="layout">
-    <header class="layout__header">
+    <header class="header">
       <img
         class="header__logo"
         src="./assets/img/logos/large.png"
@@ -77,12 +77,12 @@
       <hr class="header__divider" />
       <h2 class="header__subtitle">Full-stack Web Developer</h2>
       <video class="header__video" autoplay loop muted>
-        <source class="video__src" src="assets/video/hero.mp4" />
+        <source class="header__video-src" src="assets/video/hero.mp4" />
       </video>
     </header>
-    <nav class="layout__nav">
+    <nav class="nav">
       <div class="nav__bar">
-        <a class="bar__home-link" href="./index.html">
+        <a class="nav__home-link" href="./index.html">
           <img
             class="home-link__logo"
             src="assets/img/logos/small.png"
@@ -90,7 +90,7 @@
           />
           <span class="home-link__name"
             >Helios Barrera Hernández
-            <small class="name__occupation"
+            <small class="home-link__occupation"
               >Full-stack Web Developer</small
             ></span
           >
@@ -98,108 +98,131 @@
         <button class="nav__hamburger-btn">☰</button>
       </div>
       <ul class="nav__list">
-        <li class="list__item">
-          <a class="item__link" href="#portfolio">Portfolio</a>
+        <li class="nav__list-item">
+          <a class="list-item__link" href="#portfolio">Portfolio</a>
         </li>
-        <li class="list__item">
-          <a class="item__link" href="#skillset">Skillset</a>
+        <li class="nav__list-item">
+          <a class="list-item__link" href="#skillset">Skillset</a>
         </li>
-        <li class="list__item">
-          <a class="item__link" href="#experience">Experience</a>
+        <li class="nav__list-item">
+          <a class="list-item__link" href="#experience">Experience</a>
         </li>
-        <li class="list__item">
-          <a class="item__link" href="#contact">Contact</a>
+        <li class="nav__list-item">
+          <a class="list-item__link" href="#contact">Contact</a>
         </li>
       </ul>
     </nav>
     <main class="main">
-      <section class="main__section" id="portfolio">
+      <section class="section section--portofolio" id="portfolio">
         <h3 class="section__title">Portfolio</h3>
         <hr class="section__divider" />
         <div class="projects">
-          <button class="projects__project">
+          <button class="project">
             <img class="project__img" src="assets/img/portfolio/1.png" />
             <h4 class="project__title">Proyecto 1</h4>
           </button>
         </div>
       </section>
-      <section class="main__section" id="skillset">
+      <section class="section section--skillset" id="skillset">
         <h3 class="section__title">Skillset</h3>
         <hr class="section__divider" />
         <div class="skills">
-          <div class="skills__skill">
+          <div class="skill">
             <img class="skill__img" src="assets/img/skillset/html.svg" />
             <span class="skill__tooltip">HTML</span>
           </div>
-          <div class="skills__skill">
+          <div class="skill">
             <img class="skill__img" src="assets/img/skillset/css.png" />
             <span class="skill__tooltip">CSS</span>
           </div>
-          <div class="skills__skill">
+          <div class="skill">
             <img class="skill__img" src="assets/img/skillset/js.png" />
             <span class="skill__tooltip">Javascript</span>
           </div>
-          <div class="skills__skill">
+          <div class="skill">
             <img class="skill__img" src="assets/img/skillset/git.png" />
             <span class="skill__tooltip">GIT</span>
           </div>
-          <div class="skills__skill">
+          <div class="skill">
             <img class="skill__img" src="assets/img/skillset/npm.png" />
             <span class="skill__tooltip">npm</span>
           </div>
-          <div class="skills__skill">
+          <div class="skill">
             <img class="skill__img" src="assets/img/skillset/bash.png" />
             <span class="skill__tooltip">bash</span>
           </div>
-          <div class="skills__skill">
+          <div class="skill">
             <img class="skill__img" src="assets/img/skillset/node.png" />
             <span class="skill__tooltip">Node.js</span>
           </div>
-          <div class="skills__skill">
+          <div class="skill">
             <img class="skill__img" src="assets/img/skillset/react.png" />
             <span class="skill__tooltip">React</span>
           </div>
         </div>
       </section>
-      <section class="main__section" id="experience">
+      <section class="section section--experience" id="experience">
         <h3 class="section__title">Experience</h3>
         <hr class="section__divider" />
         <div class="work-experience">
-          <a class="work-experience__project">
-            <img class="project-experience__img" src="assets/img/experience/1.svg" />
-            <h4 class="project-experience__title">Trabajo 1</h4>
+          <a class="experience-item">
+            <img
+              class="experience-item__img"
+              src="assets/img/experience/1.svg"
+            />
+            <h4 class="experience-item__title">Trabajo 1</h4>
           </a>
         </div>
       </section>
-      <section class="main__section" id="contact">
+      <section class="section section--contact" id="contact">
         <h3 class="section__title">Contact</h3>
         <hr class="section__divider" />
         <!-- Utiliza Formspree -->
-        <form class="contact" action="" method="POST">
-          <label class="contact__label label-email">
+        <form class="contact-form" action="" method="POST">
+          <label class="contact-form__label">
             Your email:
-            <input class="contact__input" type="email" name="_replyto" />
+            <input class="contact-form__input" type="email" name="_replyto" />
           </label>
-          <label class="contact__label label-msg">
+          <label class="contact-form__label">
             Your message:
-            <textarea class="contact__txt-area" name="message"></textarea>
+            <textarea class="contact-form__txt-area" name="message"></textarea>
           </label>
-          <button class="contact__submit" type="submit">Send</button>
+          <button class="contact-form__submit" type="submit">Send</button>
         </form>
-        <nav class="contact__nav">
-          <a class="contact__link" target="_blank" href="https://www.linkedin.com/in/qlessenp/">
-            <img class="link__img" id="linkedin" src="assets/img/social/linkedin.png" />
+        <nav class="contact__social-media">
+          <a
+            class="social-media__link"
+            target="_blank"
+            href="https://www.linkedin.com/in/qlessenp/"
+          >
+            <img
+              class="social-media__img"
+              id="linkedin"
+              src="assets/img/social/linkedin.png"
+            />
           </a>
-          <a class="contact__link" target="_blank" href="https://github.com/quserforgitp">
-            <img class="link__img" id="github" src="assets/img/social/github.png" />
+          <a
+            class="social-media__link"
+            target="_blank"
+            href="https://github.com/quserforgitp"
+          >
+            <img
+              class="social-media__img"
+              id="github"
+              src="assets/img/social/github.png"
+            />
           </a>
-          <a class="contact__link" target="_blank" href="#">
-            <img class="link__img" id="youtube" src="assets/img/social/youtube.png" />
+          <a class="social-media__link" target="_blank" href="#">
+            <img
+              class="social-media__img"
+              id="youtube"
+              src="assets/img/social/youtube.png"
+            />
           </a>
         </nav>
       </section>
     </main>
-    <footer class="layout__footer">
+    <footer class="footer">
       <small class="footer__copyright"
         >Developed and designed by Helios Barrera Hernández. ©2024. All rights
         reserved.</small
