@@ -1,0 +1,77 @@
+#contact {
+  background: linear-gradient(var(--primary), var(--primary-dark));
+}
+.section__divider {
+  background-image: linear-gradient(
+    to right,
+    rgba(0, 0, 0, 0),
+    var(--white),
+    rgba(0, 0, 0, 0)
+  );
+}
+.contact {
+  font-size: 1.2rem;
+}
+.contact label {
+  display: block;
+  width: 50%;
+  margin: 0 auto;
+}
+
+input,
+textarea {
+  width: 100%;
+  padding: 1rem;
+  color: var(--white);
+  border: none;
+  background-color: rgba(0, 0, 0, 0.1);
+  box-shadow: none;
+  cursor: pointer;
+  margin: 1rem 0 2rem;
+  outline: none;
+}
+input:focus,
+textarea:focus {
+  box-shadow: 0 0 0.1rem 0.1rem var(--white);
+}
+
+.contact__txt-area {
+  resize: none;
+}
+
+.contact button {
+  background-color: var(--secondary);
+  color: var(--white);
+  margin: 3rem;
+  border: none;
+  padding: 1rem;
+  border-radius: 15px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.contact button:hover {
+  background-color: var(--secondary-dark);
+}
+
+.link__img {
+  border-radius: 10rem;
+  background-color: var(--white);
+  transition: all ease 0.3s;
+  margin: 1rem;
+}
+
+.contact__link {
+  text-decoration: none;
+}
+
+#linkedin:hover {
+  background-color: #0077b5;
+}
+
+#github:hover {
+  background-color: black;
+}
+#youtube:hover {
+  background-color: red;
+}
