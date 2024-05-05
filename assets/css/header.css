@@ -84,6 +84,12 @@
 
   cursor: pointer;
 }
+.fixed {
+  position: fixed;
+  width: 100%;
+  top: 0;
+  z-index: 100;
+}
 /* dropdown list of sections */
 .nav__list {
   background: linear-gradient(var(--primary), var(--primary-dark));
