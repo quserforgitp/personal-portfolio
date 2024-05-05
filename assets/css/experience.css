@@ -1,20 +1,37 @@
-.project-experience__img {
+/* ___HERO___ */
+.section--experience {
+  padding: 4.8rem 0;
+}
+
+.section--experience .section__divider {
+  margin-bottom: 8rem;
+  height: 0.2rem;
+  max-width: 100%;
+  border: 0;
+  background-image: linear-gradient(
+    to right,
+    rgba(0, 0, 0, 0),
+    var(--primary),
+    rgba(0, 0, 0, 0)
+  );
+}
+/* ___EXPERIENCE ITEMS___ */
+.experience-item__img {
   background: white;
   width: 150px;
   height: 150px;
-  padding: 2rem;
+  padding: 3.2rem;
   border: 5px solid var(--primary);
   border-radius: 25px;
   cursor: pointer;
-  transition: border-radius .3s ease, box-shadow .3s ease;
+  transition: border-radius 0.3s ease, box-shadow 0.3s ease;
 }
-
-.project-experience__img:hover {
+.experience-item__img:hover {
   border-radius: 0;
   box-shadow: 0px 0px 10px 1px var(--gray2);
 }
-
-.project-experience__title {
-  font-size: 1rem;
-  margin-bottom: 3rem;
+.experience-item__title {
+  font-size: 1.6rem;
+  margin-bottom: 4.8rem;
+  letter-spacing: 0.48rem;
 }
