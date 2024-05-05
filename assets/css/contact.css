@@ -4,15 +4,6 @@
   background: linear-gradient(var(--primary), var(--primary-dark));
   padding: 4.8rem 0;
 }
-.section--contact .section__divider {
-  background-image: linear-gradient(
-    to right,
-    rgba(0, 0, 0, 0),
-    var(--white),
-    rgba(0, 0, 0, 0)
-  );
-  margin-bottom: 8rem;
-}
 /* ___FORM___ */
 .contact-form {
   font-size: 1.92rem;

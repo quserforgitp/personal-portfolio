@@ -1,0 +1,25 @@
+.divider {
+  height: 0.16rem;
+  max-width: 100%;
+  border: 0;
+}
+.divider--primary {
+  background-image: linear-gradient(
+    to right,
+    rgba(0, 0, 0, 0),
+    var(--primary),
+    rgba(0, 0, 0, 0)
+  );
+}
+.divider--secondary {
+  background-image: linear-gradient(
+    to right,
+    rgba(0, 0, 0, 0),
+    var(--white),
+    rgba(0, 0, 0, 0)
+  );
+}
+
+.divider--section {
+  margin-bottom: 8rem;
+}

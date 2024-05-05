@@ -7,19 +7,6 @@
   letter-spacing: 0.48rem;
   font-size: 3.2rem;
 }
-.section__divider {
-  background-image: linear-gradient(
-    to right,
-    rgba(0, 0, 0, 0),
-    var(--primary),
-    rgba(0, 0, 0, 0)
-  );
-
-  margin-bottom: 8rem;
-  height: 0.1rem;
-  max-width: 100%;
-  border: 0;
-}
 /* ___FOR EVERY PROJECT___ */
 .project {
   box-shadow: 0 0 10px var(--gray2);
