@@ -1,77 +1,83 @@
-#contact {
+/* ___HERO___ */
+.section--contact {
+  color: var(--white);
   background: linear-gradient(var(--primary), var(--primary-dark));
+  padding: 4.8rem 0;
 }
-.section__divider {
+.section--contact .section__divider {
   background-image: linear-gradient(
     to right,
     rgba(0, 0, 0, 0),
     var(--white),
     rgba(0, 0, 0, 0)
   );
+  margin-bottom: 8rem;
 }
-.contact {
-  font-size: 1.2rem;
+/* ___FORM___ */
+.contact-form {
+  font-size: 1.92rem;
 }
-.contact label {
+.contact-form__label {
   display: block;
   width: 50%;
+  min-width: 30rem;
   margin: 0 auto;
 }
-
-input,
-textarea {
+.contact-form__input,
+.contact-form__txt-area {
   width: 100%;
-  padding: 1rem;
-  color: var(--white);
+  padding: 1.6rem 0;
+  color: var(--black);
   border: none;
   background-color: rgba(0, 0, 0, 0.1);
   box-shadow: none;
-  cursor: pointer;
-  margin: 1rem 0 2rem;
-  outline: none;
-}
-input:focus,
-textarea:focus {
-  box-shadow: 0 0 0.1rem 0.1rem var(--white);
-}
-
-.contact__txt-area {
+  margin: 1.6rem 0 3.2rem;
   resize: none;
 }
-
-.contact button {
+.contact-form__input:focus,
+.contact-form__txt-area:focus {
+  color: var(--white);
+  outline: none;
+}
+.contact-form__submit {
   background-color: var(--secondary);
   color: var(--white);
-  margin: 3rem;
+  margin: 4.8rem;
   border: none;
-  padding: 1rem;
+  padding: 1.6rem;
   border-radius: 15px;
   cursor: pointer;
   transition: background-color 0.3s ease;
 }
-
-.contact button:hover {
+.contact-form__submit:hover {
   background-color: var(--secondary-dark);
 }
 
-.link__img {
-  border-radius: 10rem;
-  background-color: var(--white);
-  transition: all ease 0.3s;
-  margin: 1rem;
-}
-
-.contact__link {
+/* ___CONTACT AND SOCIAL MEDIA___ */
+.social-media__link {
   text-decoration: none;
 }
-
+.social-media__img {
+  border-radius: 16rem;
+  background-color: var(--white);
+  transition: all ease 0.3s;
+  margin: 1.6rem;
+}
 #linkedin:hover {
   background-color: #0077b5;
 }
-
 #github:hover {
-  background-color: black;
+  background-color: #000;
 }
 #youtube:hover {
-  background-color: red;
+  background-color: #f00;
+}
+/* ___COPYRIGHT___ */
+.footer {
+  background: linear-gradient(var(--black), var(--black2));
+  padding: 3.2rem 0;
+}
+.footer__copyright {
+  color: var(--white);
+  font-size: 70%;/* aprox 11.2 px */
 }
