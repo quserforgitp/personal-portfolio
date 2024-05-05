@@ -1,61 +1,69 @@
-#skillset {
+/* ___HERO___ */
+.section--skillset {
   background: linear-gradient(var(--primary), var(--primary-dark));
+
+  padding: 4.8rem 0;
 }
-#skillset .section__divider {
-  background-image: linear-gradient(to right, rgba(0, 0, 0, 0), var(--white), rgba(0, 0, 0, 0));
+.section--skillset .section__title {
+  color: var(--white);
 }
+.section--skillset .section__divider {
+  background-image: linear-gradient(
+    to right,
+    rgba(0, 0, 0, 0),
+    var(--white),
+    rgba(0, 0, 0, 0)
+  );
+}
+/* ___SKILLSET___ */
 .skills {
+  margin: 1rem;
+
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr;
   grid-gap: 1rem;
-  margin: 1rem;
 }
-
+.skill {
+  position: relative;
+}
 .skill__img {
-border-radius: 1rem;
-max-width: 7rem;
-cursor: context-menu;
+  border-radius: 1.6rem;
+  max-width: 11.2rem;
+  cursor: context-menu;
 }
-
-
-.skills__skill {
-position: relative;
-}
-
 .skill__tooltip {
-width: 120px;
-background-color: rgba(0,0,0,0.75);
-text-align: center;
-padding: .5rem 0;
-border-radius: .5rem;
-position: absolute;
-z-index: 1;
-top: -40px;
-left: 50%;
-transform: translate(-60px, 10px);
-opacity: 0;
-transition: opacity 0.3s ease, transform 0.3s ease;
-pointer-events: none;
+  color: var(--white);
+  width: 120px;
+  background-color: rgba(0, 0, 0, 0.75);
+  text-align: center;
+  padding: 0.5rem 0;
+  border-radius: 0.8rem;
+  position: absolute;
+  z-index: 1;
+  top: -40px;
+  left: 50%;
+  transform: translate(-60px, 10px);
+  opacity: 0;
+  transition: opacity 0.3s ease, transform 0.3s ease;
+  pointer-events: none;
 }
-
-.skills__skill:hover .skill__tooltip {
-opacity: 1;
-transform: translate(-60px, 0px);
+.skill__tooltip::after {
+  content: "";
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  margin-left: -5px;
+  border-width: 5px;
+  border-style: solid;
+  border-color: rgba(0, 0, 0, 0.75) transparent transparent transparent;
 }
-
-.skill__tooltip:after {
-content: "";
-position: absolute;
-top: 100%;
-left: 50%;
-margin-left: -5px;
-border-width: 5px;
-border-style: solid;
-border-color: rgba(0,0,0,0.75) transparent transparent transparent;
+.skill:hover .skill__tooltip {
+  opacity: 1;
+  transform: translate(-60px, 0px);
 }
 
 @media only screen and (max-width: 600px) {
   .skills {
-      grid-template-columns: auto auto;
+    grid-template-columns: auto auto;
   }
 }
