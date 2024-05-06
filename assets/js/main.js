@@ -1,6 +1,6 @@
 (function () {
-    // HTML elements
-    const navbar = document.querySelector('.nav__list');
+    // DOM Elements
+    const navbar = document.querySelector('.nav');
     const hamburger = document.querySelector('.nav__hamburger-btn');
 
     // Listeners
