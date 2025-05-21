@@ -1,0 +1,9 @@
+/* 
+  Sections
+*/
+
+.topic {
+  /* user not able of grabbing or selecting text */
+  pointer-events: none;
+  user-select: none;
+}
