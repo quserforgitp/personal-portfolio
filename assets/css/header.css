@@ -20,7 +20,9 @@
   /* Restore normal opacity */
   position: relative;
   z-index: 1;
-  
+
+  /* preventing of being draggable and selectionable */
+  pointer-events: none;
 }
 .header__title {
   text-transform: uppercase;
