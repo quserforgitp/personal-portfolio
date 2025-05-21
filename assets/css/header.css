@@ -10,6 +10,13 @@
 }
 .header__logo {
   border-radius: 50%;
+  /* Fixing rectangular img */
+  /* TODO: use a square img 150x150 instead */
+  height: 150px;
+  width: 150px;
+  object-fit: cover;
+  object-position: 0 0;
+  
 }
 .header__title {
   text-transform: uppercase;
