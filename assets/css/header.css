@@ -16,6 +16,10 @@
   width: 150px;
   object-fit: cover;
   object-position: 0 0;
+
+  /* Restore normal opacity */
+  position: relative;
+  z-index: 1;
   
 }
 .header__title {
