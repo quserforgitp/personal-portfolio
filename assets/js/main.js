@@ -1,13 +1,11 @@
-(function () {
-    // DOM Elements
-    const navbar = document.querySelector('.nav');
-    const hamburger = document.querySelector('.nav__hamburger-btn');
+// assets/js/main.js
 
-    // Listeners
-    hamburger.addEventListener('click', () => {
-        navbar.classList.toggle('open');
-        hamburger.classList.toggle('open');
-    });
-})()
+import { initPortfolioSlider } from './modules/portfolioSlider.js';
+import { initStickyNavbar } from './modules/navbarSticky.js';
+import { initHamburgerToggle } from './modules/hamburgerToggle.js';
 
-
+document.addEventListener('DOMContentLoaded', () => {
+  initStickyNavbar();
+  initHamburgerToggle();
+  initPortfolioSlider();
+});
