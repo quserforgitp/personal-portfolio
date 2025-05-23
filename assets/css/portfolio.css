@@ -34,25 +34,26 @@
   user-select: none;
 }
 
-/* SLIDE ANIMATION */
 
-    .slide-from-left {
-      transform: translate(-100%);
-    }
+/*============= SLIDE-IN PROJECT IMAGES ANIMATION =============*/
 
-    .slide-from-right {
-      transform: translate(100%);
-    }
+.slide-from-left {
+  transform: translate(-100%);
+}
 
-    .slide-from-top {
-      transform: translate(0, -100%);
-    }
+.slide-from-right {
+  transform: translate(100%);
+}
 
-    .slide-from-bottom {
-      transform: translate(0, 100%);
-    }
+.slide-from-top {
+  transform: translate(0, -100%);
+}
 
-    .current-visible {
-      transform: translate(0);
-      z-index: 1;
-    }
+.slide-from-bottom {
+  transform: translate(0, 100%);
+}
+
+.current-visible {
+  transform: translate(0);
+  z-index: 1;
+}
